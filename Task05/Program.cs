@@ -5,9 +5,19 @@
 Console.WriteLine("введите натуральное число");
 int number = Convert.ToInt32(Console.ReadLine());
 
-int i = -number;
-while(i <= number)
+if (number < 1)
 {
-    Console.WriteLine(i);
-    ++i;
+    Console.WriteLine("Некоректный ввод");
 }
+
+else
+{
+    int i = -number;
+    while (i <= number)
+    {
+        Console.Write($"{i} ");
+        ++i;
+    }
+}
+
+
