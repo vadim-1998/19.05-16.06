@@ -6,13 +6,15 @@
 Console.WriteLine("введите номер четверти");
 int quarter = Convert.ToInt32(Console.ReadLine());
 
-if(quarter < 1 || quarter > 4)
+if (quarter < 1 || quarter > 4)
 {
     Console.WriteLine("неккоректное число");
     return;
 }
 string result = Coordinate(quarter);
 Console.WriteLine($" четверть под номером {quarter} соответсвует координатам {result}");
+
+
 string Coordinate(int q)
 
 {
