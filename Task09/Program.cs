@@ -20,7 +20,7 @@ Console.WriteLine($"случайное число из отрезка 10 - 99 ->
 //     Console.WriteLine($"наибольшая цифра числа ->  {secondDigit}");
 
 
-// // второй способ сравнения итерарный аператор
+// // второй способ сравнения тернарный оператор
 
 // int maxDigit = firstDigit > secondDigit ? firstDigit : secondDigit;
 // Console.WriteLine($"наибольшая цифра числа ->  {maxDigit}");
