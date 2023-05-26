@@ -3,25 +3,20 @@
 // 782 -> 8
 // 918 -> 1
 
-
-
-
-int ShowSecondDigit(int num)
+int Prompt(string message)
 {
-    int showSecondDigit = num / 10 % 10;
-    return showSecondDigit;
+    System.Console.Write(message);
+    string value = Console.ReadLine();
+    int result = Convert.ToInt32(value);
+    return result;
 }
 
-Console.WriteLine("Введите трехзначное  число");
-
-int number = Convert.ToInt32(Console.ReadLine());
-
-int showSecondDigit = ShowSecondDigit(number);
-
-
-showSecondDigit = ShowSecondDigit(number);
-Console.WriteLine($"вторая цифра числа -> {showSecondDigit}");
-
-
-
-
+int number = Prompt(" введите трехзнчное число ");
+if (number < 100 || number > 1000)
+{
+    Console.WriteLine("вы ввели не трехзначное число");
+    return;
+}
+Console.WriteLine($"Введенное число {number}");
+int secondRank = number / 10 % 10;
+Console.WriteLine($"Вторая цифра {secondRank}");
