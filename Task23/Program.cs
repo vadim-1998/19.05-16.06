@@ -11,9 +11,9 @@
 Console.WriteLine("Введите натуральное число");
 int num = Convert.ToInt32(Console.ReadLine());
 
-TriangleTable(num);
+CubeTable(num);
 
-void TriangleTable(int n)
+void CubeTable(int n)
 {
     int count = 1;
     while (count <= n)
